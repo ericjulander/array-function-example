@@ -319,7 +319,8 @@ var nameList = getNameList(newQue);
  }
  
  console.log(Array.from(makeCaps(makeNameLit("thesuperrandomnameofawesomeness"))).sort().join(""));
- 
+
+// spits out the mark down table code into the html page
  function print(title, que){
 	 /*
 	  * reduce
@@ -330,11 +331,13 @@ var nameList = getNameList(newQue);
 	  */
 	  function compileLine(list, quePerson, index){
 		  if(index <= 1){
-			  list = ("Que Number|Name\n---|---:\n"+ list.priority + " | "+list.name);
+			  list = ("Que Number | Name<br>--- | ---:<br>"+ list.priority + " | "+list.name);
 		  }
-		  return list + ("\n"+ quePerson.priority + " | "+quePerson.name);
+		  return list + ("<br>"+ quePerson.priority + " | "+quePerson.name);
 	  }
 	  
 	  var line = que.reduce(compileLine);
-	  console.log(title+line);
+	  var out = document.getElementById("md-box");
+	  var msg = ("## "+title+"<br>" + line);
+	  out.innerHTML = msg;
  }
