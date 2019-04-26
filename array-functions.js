@@ -319,7 +319,8 @@ var nameList = getNameList(newQue);
  }
  
  console.log(Array.from(makeCaps(makeNameLit("thesuperrandomnameofawesomeness"))).sort().join(""));
- 
+
+// spits out the mark down table code into the html page
  function print(title, que){
 	 /*
 	  * reduce
