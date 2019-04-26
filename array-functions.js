@@ -330,13 +330,13 @@ var nameList = getNameList(newQue);
 	  */
 	  function compileLine(list, quePerson, index){
 		  if(index <= 1){
-			  list = ("Que Number | Name\n--- | ---:\n"+ list.priority + " | "+list.name);
+			  list = ("Que Number | Name<br>--- | ---:<br>"+ list.priority + " | "+list.name);
 		  }
-		  return list + ("\n"+ quePerson.priority + " | "+quePerson.name);
+		  return list + ("<br>"+ quePerson.priority + " | "+quePerson.name);
 	  }
 	  
 	  var line = que.reduce(compileLine);
 	  var out = document.getElementById("md-box");
-	  var msg = ("## "+title+" " + line);
-	  out.innerText = msg;
+	  var msg = ("## "+title+"<br>" + line);
+	  out.innerHTML = msg;
  }

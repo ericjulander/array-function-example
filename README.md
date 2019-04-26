@@ -10,5 +10,11 @@ This is a **bold** new test 555
 |3 | spot|
 |3 | that thing|
 
-
-## The Aight List Que Number | Name--- | ---:1 | zenok2 | tangmo2 | jeffry3 | spot3 | that thing
+## The Aight List
+Que Number | Name
+--- | ---:
+1 | zenok
+2 | tangmo
+2 | jeffry
+3 | spot
+3 | that thing
