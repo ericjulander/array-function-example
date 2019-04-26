@@ -329,9 +329,10 @@ var nameList = getNameList(newQue);
 	  * 4.) You could use this to print the que info into one string
 	  */
 	  function compileLine(list, quePerson, index){
-		  if(index <= 1)
-			  list = ("\n"+ list.priority + " -------- "+list.name);
-		  return list + ("\n"+ quePerson.priority + " -------- "+quePerson.name);
+		  if(index <= 1){
+			  list = ("Que Number|Name\n---|---:\n"+ list.priority + " | "+list.name);
+		  }
+		  return list + ("\n"+ quePerson.priority + " | "+quePerson.name);
 	  }
 	  
 	  var line = que.reduce(compileLine);
