@@ -2,9 +2,8 @@
 These are my array functions for the orientation and training
 This is a **bold** new test 555
 ## The Aight List
-===
-|Que Number|Name|
-|---|---:|
+|Que Number | Name|
+|--- | ---:|
 |1 | zenok|
 |2 | tangmo|
 |2 | jeffry|
